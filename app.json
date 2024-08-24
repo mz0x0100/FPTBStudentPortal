@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "FPTBStudPort",
+    "name": "FPTB Student Portal",
     "slug": "FPTBStudPort",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/favicon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/polylogo.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,9 +17,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/polylogo.jpg",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.mz0x0100.FPTBStudentPortal"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +32,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "17e29256-1434-4942-9e21-3fd15b10e424"
+      }
     }
   }
 }

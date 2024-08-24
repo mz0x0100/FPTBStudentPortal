@@ -11,24 +11,45 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-      }}>
+        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
+        headerShown: true,
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: "Home",
+          headerShown: true,
+          headerTitle: "Student Portal (FPTB)",
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <TabBarIcon
+              name={focused ? "home" : "home-outline"}
+              color={color}
+            />
           ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="profile"
         options={{
-          title: 'Explore',
+          title: "Dashboard",
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon
+              name={focused ? "person-circle" : "person-circle-outline"}
+              color={color}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Settings",
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon
+              name={focused ? "settings" : "settings-outline"}
+              color={color}
+            />
           ),
         }}
       />
